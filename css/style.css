@@ -2,7 +2,7 @@
     margin: 0px;
     padding: 0px;
     font-family: 'Poppins', sans-serif;
-
+    box-sizing: border-box;
 }
 
 
@@ -35,13 +35,106 @@
     }
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 768px) {
+    .topnav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
     .topnav a:not(:first-child) {display: none;}
     .topnav a.icon {
       float: right;
       display: block;
     }
+
+    .grid-about, .grid-about > h2, .grid-about > p,  .grid-about > a {
+        margin: 0 !important;
+        padding: 0 !important;
+        margin-block-start: 0px !important;
+        margin-block-end: 0px !important;
+        margin-inline-start: 0px !important;
+        margin-inline-end: 0px !important;
+    }
+
+    .grid-about > h2{
+        margin-top: 15px;    
+        width: 100vw;
+        padding: 20px !important;
+        word-break: break-all;
+    }
+
+    .grid-about > p{
+        width: 100vw;
+        padding: 20px !important;
+        font-size: 15px !important;
+    }
+
+    #about a{
+        display: flex;
+        justify-content:center;
+        align-items:center;
+        margin-bottom: 15px !important;
+    }
+
+    #about a .button-about {
+        cursor: pointer;
+        background-color: transparent;
+        display: block;
+        margin: 0px !important;
+        text-decoration: none;
+        font-weight: bold;
+        color: #493fd4;
+        text-transform: uppercase;
+        letter-spacing: 2.5px;
+        font-size: 19px;
+        padding: 0.9375em 3em;
+        border: 2px solid #493fd4;
+        text-align: center;
+
   }
+
+    .disable{
+        display: none !important;
+    }
+
+    .menu-mobile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 100px;
+        position: fixed;
+        height: 100vh;
+        width: 100vw;
+        background: #fff;
+    }
+
+    .active{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    span.line-hamburger {
+        height: 2px;
+        width: 50px;
+        background-color: #fff;
+        display: block;
+        border-radius: 10px;
+    }
+
+    #btnFechaMenuMobile{
+        position: absolute;
+        top: 50px;
+        right: 20px;
+    }
+
+    #btnFechaMenuMobile > .line-hamburger{
+        background-color: #000;
+        margin-top: -11px;
+    }
+}
 /* Media */
 
 
