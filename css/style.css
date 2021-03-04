@@ -203,14 +203,21 @@
     }
     /* page sobre mim */
     /* page projetos */
-    #title-projeto .content
-    /* page projetos */
-    /* page contato */
-    .grid-about h2 {
-        display: flex !important;
-        justify-content: center !important;
-        align-items: center !important;
+    #title-projeto~.content {
+        flex-direction: column;
+        height: initial;
     }
+    .content>.card {
+        margin: initial;
+        box-shadow: initial;
+        margin-bottom: 18px;
+    }
+    /* page projetos */
+    /* page contato *
+
+
+
+
     /* page contato */
 }
 
