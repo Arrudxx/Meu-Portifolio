@@ -2,7 +2,7 @@
     margin: 0px;
     padding: 0px;
     font-family: 'Poppins', sans-serif;
-
+    box-sizing: border-box;
 }
 
 
@@ -13,40 +13,213 @@
         padding-left: 10em;
         display: inline;
         align-items: center;
-        background-color:  #131212;
+        background-color: #131212;
     }
-
-    .grid-about a{
+    .grid-about a {
         padding: 3.7em;
     }
-
-    .foto-about{
+    .foto-about {
         display: none;
     }
-
-    .grid-container .grid-foto-2 img{
+    .grid-container .grid-foto-2 img {
         display: none;
     }
-  }
+}
 
 @media screen and (max-width: 955px) {
-    #about a .button-about{
+    #about a .button-about {
         margin-right: 6em;
     }
 }
 
-@media screen and (max-width: 640px) {
-    .topnav a:not(:first-child) {display: none;}
-    .topnav a.icon {
-      float: right;
-      display: block;
+@media screen and (max-width: 1024px) {
+    #contato>.grid-contato>.grid-about {}
+    #contato>.grid-contato>.grid-about>h2 {
+        display: flex;
     }
-  }
+    #contato>.grid-contato>.grid-about>.img-teste {}
+}
+
+@media screen and (max-width: 768px) {
+    .topnav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .topnav a:not(:first-child) {
+        display: none;
+    }
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+    /* menu mobile */
+    .disable {
+        display: none !important;
+    }
+    .menu-mobile {
+        background: #333333;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 100px;
+        position: fixed;
+        height: 100vh;
+        width: 100vw;
+        background: #fff;
+    }
+    #menuMobile {
+        background: #060B4E;
+    }
+    #menuMobile>a {
+        color: white;
+        text-decoration: none;
+        font-size: 30px;
+        border-bottom: 3px solid #000000;
+    }
+    #menuMobile>a:hover {
+        transition: 0.5s;
+        color: #493fd4;
+    }
+    .active {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    span.line-hamburger {
+        height: 2px;
+        width: 50px;
+        background-color: #fff;
+        display: block;
+        border-radius: 10px;
+    }
+    #btnFechaMenuMobile {
+        position: absolute;
+        top: 50px;
+        right: 20px;
+    }
+    #btnFechaMenuMobile>.line-hamburger {
+        background-color: #000;
+        margin-top: -11px;
+    }
+    /* menu mobile */
+    /* page home */
+    .grid-about,
+    .grid-about>h2,
+    .grid-about>p,
+    .grid-about>a {
+        margin: 0 !important;
+        padding: 0 !important;
+        margin-block-start: 0px !important;
+        margin-block-end: 0px !important;
+        margin-inline-start: 0px !important;
+        margin-inline-end: 0px !important;
+    }
+    .grid-about>h2 {
+        margin-top: 15px;
+        width: 100vw;
+        padding: 20px !important;
+        word-break: break-all;
+    }
+    .grid-about>p {
+        width: 100vw;
+        padding: 20px !important;
+        font-size: 15px !important;
+    }
+    #about a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 15px !important;
+    }
+    #about a .button-about {
+        cursor: pointer;
+        background-color: transparent;
+        display: block;
+        margin: 0px !important;
+        text-decoration: none;
+        font-weight: bold;
+        color: #493fd4;
+        text-transform: uppercase;
+        letter-spacing: 2.5px;
+        font-size: 19px;
+        padding: 0.9375em 3em;
+        border: 2px solid #493fd4;
+        text-align: center;
+    }
+    /* page home */
+    /* page sobre mim */
+    #about .title-page h1 {
+        width: 65vw;
+        font-size: 32px;
+    }
+    #about .grid-container {
+        display: block !important;
+    }
+    #about .grid-container .grid-foto {
+        display: none;
+    }
+    .grid-about-2,
+    .grid-about-2>h2,
+    .grid-about-2>p,
+    .grid-about-2>a {
+        margin: 0 !important;
+        padding: 0 !important;
+        margin-block-start: 0px !important;
+        margin-block-end: 0px !important;
+        margin-inline-start: 0px !important;
+        margin-inline-end: 0px !important;
+    }
+    .grid-about-2>h2 {
+        margin-top: 15px;
+        width: 100vw;
+        padding: 20px !important;
+        word-break: break-all;
+    }
+    .grid-about-2>p {
+        width: 100vw;
+        padding: 20px !important;
+        font-size: 15px !important;
+    }
+    #skills .title-page-skill h1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: none !important;
+        background: black;
+        border-radius: 0px;
+        width: min-content;
+        font-size: 30px;
+    }
+    #skills .container {
+        display: block !important;
+        height: 100vh;
+        width: 100vw;
+        padding-left: 120px;
+    }
+    #skills .container h5 {
+        margin-bottom: 50px;
+    }
+    /* page sobre mim */
+    /* page projetos */
+    #title-projeto .content
+    /* page projetos */
+    /* page contato */
+    .grid-about h2 {
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+    /* page contato */
+}
+
+
 /* Media */
 
 
-
 /* Navbar */
+
 main {
     background-color: #131212;
 }
@@ -54,7 +227,8 @@ main {
 .topnav {
     background-color: rgb(6, 11, 78);
     overflow: hidden;
-    position: fixed; /* Set the navbar to fixed position */
+    position: fixed;
+    /* Set the navbar to fixed position */
     width: 100%;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -67,8 +241,8 @@ main {
     padding: 14px 16px;
     text-decoration: none;
     font-size: 19px;
-    border-bottom: solid 4px transparent; 
-  }
+    border-bottom: solid 4px transparent;
+}
 
 .topnav-right {
     float: right;
@@ -83,10 +257,14 @@ main {
 
 .logo a:first-child {
     color: white;
-} 
+}
+
+
 /* Navbar */
 
+
 /* banner */
+
 #banner {
     background-image: url(../img/banner.jpg);
     background-color: #cccccc;
@@ -107,16 +285,19 @@ main {
     padding-left: 7.7%;
     font-size: 60px;
     font-weight: 600;
-    
 }
 
 .subtitle {
     font-size: 28px;
     color: rgb(224, 222, 238);
 }
+
+
 /* banner */
 
+
 /* about*/
+
 #about {
     color: white;
     background-color: rgb(19, 18, 18);
@@ -140,7 +321,11 @@ main {
 #about .title-page h1 {
     box-shadow: 60px -16px rgb(2, 0, 128);
     background-color: rgb(0, 0, 0);
+}
 
+#skills .title-page-skill h1 {
+    box-shadow: 60px -16px rgb(2, 0, 128);
+    background-color: rgb(0, 0, 0);
 }
 
 .grid-container {
@@ -162,7 +347,6 @@ main {
     padding-right: 1.5em;
 }
 
-
 .grid-about h2 {
     display: block;
     text-align: center;
@@ -175,12 +359,15 @@ main {
 .grid-about p {
     display: block;
     margin-left: 3em;
+    font-size: 20px;
 }
 
 .grid-about-2 p {
     display: block;
     text-align: justify;
     margin-left: 5em;
+    font-size: 20px;
+    padding-top: 10px;
 }
 
 #about a .button-about {
@@ -199,7 +386,6 @@ main {
     padding: 0.9375em 3em;
     border: 2px solid #493fd4;
     text-align: center;
-    
 }
 
 #about a .button-download {
@@ -217,10 +403,10 @@ main {
     padding: 0.9375em 3em;
     border: 2px solid #493fd4;
     text-align: center;
-    
 }
 
-#about a button:hover, a button:focus {
+#about a button:hover,
+a button:focus {
     background: #493fd4;
     transition: 0.5s;
     color: white;
@@ -236,7 +422,10 @@ main {
 .grid-foto-2 {
     margin-left: 6em;
 }
+
+
 /* about*/
+
 
 /* Skills */
 
@@ -262,17 +451,14 @@ main {
     padding-left: 3em;
 }
 
-
 #skills img {
     height: 7.5em;
     margin-bottom: 0.625em;
     padding-right: 4em;
 }
+
+
 /* Skills */
-
-
-
-
 
 
 /* Projects */
@@ -300,7 +486,6 @@ main {
 #title-projeto .title-page h1 {
     box-shadow: 60px -16px rgb(2, 0, 128);
     background-color: rgb(0, 0, 0);
-
 }
 
 .content {
@@ -312,61 +497,60 @@ main {
     height: 100vh;
 }
 
- .card {
-     border: solid 2px #9e9e9e;
-     background: #000000;
-     box-shadow: 60px -20px rgb(2, 0, 128);
-     border-radius: 15px;
-     width: 20em;
-     margin-right: 5em;
-     margin-bottom: 5em;
- }
+.card {
+    border: solid 2px #9e9e9e;
+    background: #000000;
+    box-shadow: 60px -20px rgb(2, 0, 128);
+    border-radius: 15px;
+    width: 20em;
+    margin-right: 5em;
+    margin-bottom: 5em;
+}
 
- .top-card {
-     padding: 20px;
-     padding-top: 10px;
- }
- .title-card {
+.top-card {
+    padding: 20px;
+    padding-top: 10px;
+}
+
+.title-card {
     color: rgb(253, 253, 253);
- }
+}
 
- .second-text {
-     margin-top: 1em;
-     color: #c5c5c5;
- }
+.second-text {
+    margin-top: 1em;
+    color: #c5c5c5;
+}
 
- .media-card-1 {
-     background: url(../img/img-spotify-clone.PNG) center/cover;
-     height: 250px;
-     width: 100%;
-     border: 1px solid#9e9e9e;
- }
+.media-card-1 {
+    background: url(../img/img-spotify-clone.PNG) center/cover;
+    height: 250px;
+    width: 100%;
+    border: 1px solid#9e9e9e;
+}
 
- .media-card-2 {
-     background: url(../img/sistema-para-clinica.jpg) center/cover;
-     height: 250px;
-     width: 100%;
-     border: 1px solid #9e9e9e;
- }
+.media-card-2 {
+    background: url(../img/sistema-para-clinica.jpg) center/cover;
+    height: 250px;
+    width: 100%;
+    border: 1px solid #9e9e9e;
+}
 
- .media-card-3 {
+.media-card-3 {
     background: url(../img/modelo-projeto-site.png) center/cover;
     height: 250px;
     width: 100%;
     border: 1px solid #9e9e9e;
- }
+}
 
+.bottom-card {
+    padding: 20px;
+}
 
- .bottom-card {
-     padding: 20px;
- }
+.bottom-text {
+    color: #c5c5c5;
+}
 
- .bottom-text {
-     color: #c5c5c5;
-
- }
-
- .action {
+.action {
     cursor: pointer;
     background-color: transparent;
     display: inline-block;
@@ -381,17 +565,19 @@ main {
     border: 2px solid #493fd4;
     text-align: center;
     border-radius: 15px;
- }
+}
 
- .action:hover {
+.action:hover {
     background: #493fd4;
     transition: 0.5s;
     color: rgb(0, 0, 0);
     border: 2px solid #ffffff;
     border-radius: 15px;
- }
+}
+
 
 /* Projects */
+
 
 /* Contact */
 
@@ -445,7 +631,7 @@ main {
     color: rgb(78, 78, 223);
 }
 
-.img-teste  {
+.img-teste {
     padding-left: 1em;
     color: white;
     display: flex;
@@ -466,15 +652,11 @@ main {
 }
 
 
-
-
-
-
 /* Contact */
 
 
-
 /* footer */
+
 footer {
     text-align: center;
     background-color: rgb(16, 16, 17);
@@ -491,5 +673,6 @@ footer a {
     text-decoration: none;
     color: #4E4EDF;
 }
+
 
 /* footer */

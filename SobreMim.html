@@ -22,13 +22,30 @@
                 <a href="">Daniel Arruda</a>
             </div>
             <div class="topnav-right">
-                <a class="active" href="index.html">Home</a>
-                <a href="SobreMim.html">Sobre mim</a>
+                <div class="active" id="btnMenuMobile">
+                    <span class="line-hamburger"></span>
+                    <span class="line-hamburger"></span>
+                    <span class="line-hamburger"></span>
+                </div>
+                <a href="index.html">Home</a>
+                <a href="#">Sobre mim</a>
                 <a href="Projetos.html">Projetos</a>
                 <a href="Contato.html">Contato</a>
             </div>
         </div>
     </header>
+
+    <div class="menu-mobile disable" id="menuMobile">
+        <div class="active" id="btnFechaMenuMobile">
+            <span class="line-hamburger" style="transform: rotate(45deg);"></span>
+            <span class="line-hamburger" style="transform: rotate(-45deg);"></span>
+        </div>
+        <a href="index.html">Home</a>
+        <a href="#">Sobre mim</a>
+        <a href="Projetos.html">Projetos</a>
+        <a href="Contato.html">Contato</a>
+    </div>
+
 
     <main>
 
@@ -40,16 +57,13 @@
                 <div class="grid-about">
                     <h2>Console.WriteLine("Hello Word");</h2>
 
-                    <p>&nbsp;&nbsp;&nbsp;Desde dos 16 anos trabalhando na área de TI como jovem aprendiz na empresa
-                        Assupero Ensino
-                        Superior LTDA sempre estou muito muito focado e antenado para me tornar um excelente
-                        profissional.
-                        <br>
-                    &nbsp;&nbsp;&nbsp;À procura de um estágio estou no terceiro semestre do ensino superior cursando
-                        analise e
-                        desenvolvimento de sistemas na Universidade Paulista e no período noturno e tenho conhecimento
-                        do pacote office (Excel, PowerPoint e Word). Linguagens de programação como linguagem C, HTML 5,
-                        CSS 3, Javascript e frameworks como Bootstrap. E com um inglês básico.</p>
+                    <p>&nbsp;&nbsp;&nbsp;Desde dos 16 anos trabalhando na área de TI como jovem aprendiz na empresa Assupero Ensino Superior LTDA sempre estou muito muito focado e antenado para me tornar um excelente profissional.
+                    </p>
+                    <br>
+                    <p>
+                        &nbsp;&nbsp;&nbsp;À procura de um estágio estou no terceiro semestre do ensino superior cursando analise e desenvolvimento de sistemas na Universidade Paulista e no período noturno e tenho conhecimento do pacote office (Excel, PowerPoint e Word). Linguagens
+                        de programação como linguagem C, HTML 5, CSS 3, Javascript e frameworks como Bootstrap. E com um inglês básico.
+                    </p>
 
                 </div>
                 <div class="grid-foto">
@@ -63,32 +77,38 @@
                 </div>
                 <div class="grid-about-2">
                     <p>
-                        &nbsp;&nbsp;&nbsp;Quando criança já era muito interessado sobre tecnologia, queria entender como as coisas funcionavam e para isso eu já sabia que teria que estudar muito sobre tudo nesta imersa área, com meus conhecimentos e um pouco de sorte acabei conhecendo a área de programação por acaso e acabei me aprofundando assim que conseguir meu primeiro emprego. <br>
-                        &nbsp;&nbsp;&nbsp;De lá para cá conseguir uma bolsa de estudos e ingressei na faculdade de Análise e Desenvolvimento de Sistemas querendo aprender um pouco de tudo sobre programação, assim sigo sempre em frente para poder conseguir entender como o mundo funciona com um olhar de programador
+                        &nbsp;&nbsp;&nbsp;Quando criança já era muito interessado sobre tecnologia, queria entender como as coisas funcionavam e para isso eu já sabia que teria que estudar muito sobre tudo nesta imersa área, com meus conhecimentos e um pouco de sorte acabei
+                        conhecendo a área de programação por acaso e acabei me aprofundando assim que conseguir meu primeiro emprego. <br>
                     </p>
+                    <p>
+                        &nbsp;&nbsp;&nbsp;De lá para cá conseguir uma bolsa de estudos e ingressei na faculdade de Análise e Desenvolvimento de Sistemas querendo aprender um pouco de tudo sobre programação, assim sigo sempre em frente para poder conseguir entender como o mundo
+                        funciona com um olhar de programador
+                    </p>
+
+
                 </div>
             </div>
 
             <section id="skills">
-                <div class="title-page">
+                <div class="title-page-skill">
                     <h1>Conhecimentos em</h1>
                 </div>
 
 
                 <div class="container">
-                    <div>
+                    <div class="img-skill">
                         <img src="img/html5.svg" alt="html5 icon">
                         <h5>HTML</h5>
                     </div>
-                    <div>
+                    <div class="img-skill">
                         <img src="img/css-3.svg" alt="css3 icon">
                         <h5>CSS</h5>
                     </div>
-                    <div>
+                    <div class="img-skill">
                         <img src="img/Unofficial_JavaScript_logo_2.svg" alt="javascript logo">
                         <h5>JavaScript</h5>
                     </div>
-                    <div>
+                    <div class="img-skill">
                         <img src="img/C_Sharp_logo.svg" alt="react.js logo">
                         <h5>C#</h5>
                     </div>
@@ -99,8 +119,7 @@
 
 
 
-            <a href="Projetos.html" target="_blank"><button
-                    class="button-download">Ver Projetos</button></a>
+            <a href="Projetos.html" target="_blank"><button class="button-download">Ver Projetos</button></a>
             <a href="downloads/Daniel_Arruda_curriculo - Copia.pdf" target="_blank"><button
                     class="button-download">Download Do Currículo</button></a>
 
@@ -110,14 +129,11 @@
     <footer>
         <div class="icons">
             <!-- linkedin icon -->
-            <a href="https://www.linkedin.com/in/daniel-arruda-4623331a4/" target="_blank"><img
-                    src="/img/logotipo-do-linkedin.svg" alt="linkedin" width="39em"></a>
+            <a href="https://www.linkedin.com/in/daniel-arruda-4623331a4/" target="_blank"><img src="/img/logotipo-do-linkedin.svg" alt="linkedin" width="39em"></a>
             <!-- whatsapp icon -->
-            <a href="https://web.whatsapp.com/send?phone=5511977220611"><img src="/img/logotipo-do-whatsapp.svg"
-                    alt="whatsapp" width="39em"></a>
+            <a href="https://web.whatsapp.com/send?phone=5511977220611"><img src="/img/logotipo-do-whatsapp.svg" alt="whatsapp" width="39em"></a>
             <!-- github icon -->
-            <a class="img-git" href="https://github.com/Arrudxx" target="_blank"> <img src="/img/logotipo-do-github.svg"
-                    alt="github" width="42em"> </a>
+            <a class="img-git" href="https://github.com/Arrudxx" target="_blank"> <img src="/img/logotipo-do-github.svg" alt="github" width="42em"> </a>
         </div>
         <p>
             Design insipirado e baseado no Portifolio de
@@ -125,7 +141,8 @@
         </p>
         <p class="copyright">Copyright © 2021 Daniel Arruda.</p>
     </footer>
-
 </body>
+
+<script src="js/script.js"></script>
 
 </html>

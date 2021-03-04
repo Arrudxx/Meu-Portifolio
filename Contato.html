@@ -25,13 +25,29 @@
                 <a href="">Daniel Arruda</a>
             </div>
             <div class="topnav-right">
-                <a class="active" href="index.html">Home</a>
+                <div class="active" id="btnMenuMobile">
+                    <span class="line-hamburger"></span>
+                    <span class="line-hamburger"></span>
+                    <span class="line-hamburger"></span>
+                </div>
+                <a href="#">Home</a>
                 <a href="SobreMim.html">Sobre mim</a>
                 <a href="Projetos.html">Projetos</a>
-                <a href="Con">Contato</a>
+                <a href="Contato.html">Contato</a>
             </div>
         </div>
     </header>
+
+    <div class="menu-mobile disable" id="menuMobile">
+        <div class="active" id="btnFechaMenuMobile">
+            <span class="line-hamburger" style="transform: rotate(45deg);"></span>
+            <span class="line-hamburger" style="transform: rotate(-45deg);"></span>
+        </div>
+        <a href="index.html">Home</a>
+        <a href="SobreMim.html">Sobre mim</a>
+        <a href="Projetos.html">Projetos</a>
+        <a href="#">Contato</a>
+    </div>
 
     <main>
 
@@ -48,22 +64,30 @@
 
                     <div class="img-teste">
                         <h3>Endereço:</h3>
-                        <a href="https://www.google.com/maps/place/S%C3%A3o+Paulo,+SP/@-23.6821604,-46.8754915,10z/data=!3m1!4b1!4m5!3m4!1s0x94ce448183a461d1:0x9ba94b08ff335bae!8m2!3d-23.5505199!4d-46.6333094"><h4>&nbsp;&nbsp;São Paulo - SP</h4></a>
+                        <a href="https://www.google.com/maps/place/S%C3%A3o+Paulo,+SP/@-23.6821604,-46.8754915,10z/data=!3m1!4b1!4m5!3m4!1s0x94ce448183a461d1:0x9ba94b08ff335bae!8m2!3d-23.5505199!4d-46.6333094">
+                            <h4>&nbsp;&nbsp;São Paulo - SP</h4>
+                        </a>
                     </div>
 
                     <div class="img-teste">
                         <h3>Email:</h3>
-                        <a href="mailto:D4niel.arruda@gmail.com"><h4>&nbsp;&nbsp;D4niel.arruda@gmail.com</h4></a>
+                        <a href="mailto:D4niel.arruda@gmail.com">
+                            <h4>&nbsp;&nbsp;D4niel.arruda@gmail.com</h4>
+                        </a>
                     </div>
 
                     <div class="img-teste">
                         <h3>Github:</h3>
-                        <a href="https://github.com/Arrudxx"><h4>&nbsp;&nbsp;https://github.com/Arrudxx</h4></a>
+                        <a href="https://github.com/Arrudxx">
+                            <h4>&nbsp;&nbsp;https://github.com/Arrudxx</h4>
+                        </a>
                     </div>
 
                     <div class="img-teste">
                         <h3>Linkedin:</h3>
-                        <a href="https://github.com/Arrudxx"><h4>&nbsp;&nbsp;https://www.linkedin.com/in/daniel-arruda-4623331a4/</h4></a>
+                        <a href="https://github.com/Arrudxx">
+                            <h4>&nbsp;&nbsp;https://www.linkedin.com/in/daniel-arruda-4623331a4/</h4>
+                        </a>
                     </div>
 
 
@@ -95,14 +119,11 @@
     <footer>
         <div class="icons">
             <!-- linkedin icon -->
-            <a href="https://www.linkedin.com/in/daniel-arruda-4623331a4/" target="_blank"><img
-                    src="/img/logotipo-do-linkedin.svg" alt="linkedin" width="39em"></a>
+            <a href="https://www.linkedin.com/in/daniel-arruda-4623331a4/" target="_blank"><img src="/img/logotipo-do-linkedin.svg" alt="linkedin" width="39em"></a>
             <!-- whatsapp icon -->
-            <a href="https://web.whatsapp.com/send?phone=5511977220611"><img src="/img/logotipo-do-whatsapp.svg"
-                    alt="whatsapp" width="39em"></a>
+            <a href="https://web.whatsapp.com/send?phone=5511977220611"><img src="/img/logotipo-do-whatsapp.svg" alt="whatsapp" width="39em"></a>
             <!-- github icon -->
-            <a class="img-git" href="https://github.com/Arrudxx" target="_blank"> <img src="/img/logotipo-do-github.svg"
-                    alt="github" width="42em"> </a>
+            <a class="img-git" href="https://github.com/Arrudxx" target="_blank"> <img src="/img/logotipo-do-github.svg" alt="github" width="42em"> </a>
         </div>
         <p>
             Design insipirado e baseado no Portifolio de
@@ -112,5 +133,7 @@
     </footer>
 
 </body>
+
+<script src="js/script.js"></script>
 
 </html>
