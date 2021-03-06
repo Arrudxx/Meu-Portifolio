@@ -213,11 +213,15 @@
         margin-bottom: 18px;
     }
     /* page projetos */
-    /* page contato *
-
-
-
-
+    /* page contato */
+    .grid-about {
+        box-shadow: none;
+    }
+    .img-teste>a {
+        padding: 0px;
+        padding-left: 10px;
+        word-break: break-all;
+    }
     /* page contato */
 }
 
@@ -393,6 +397,7 @@ main {
     padding: 0.9375em 3em;
     border: 2px solid #493fd4;
     text-align: center;
+    border-radius: 20px;
 }
 
 #about a .button-download {
@@ -410,6 +415,7 @@ main {
     padding: 0.9375em 3em;
     border: 2px solid #493fd4;
     text-align: center;
+    border-radius: 20px;
 }
 
 #about a button:hover,
